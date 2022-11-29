@@ -7,6 +7,7 @@ const exit = document.querySelector('#exit')
 let time = 20
 let score = 0
 
+
 startBtn.addEventListener('click', (event) => {
     event.preventDefault()
     screens[0].classList.add('up')
@@ -78,3 +79,4 @@ function createRandomCircle() {
 function getRandomNumber(min, max) {
     return Math.round(Math.random() * (max - min) + min)
 }
+

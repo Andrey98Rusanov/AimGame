@@ -18,29 +18,44 @@
         <li>
           <button class="time-btn"
                   data-time ="10">
-            10 сек
+            10 s
           </button>
         </li>
         <li>
           <button class="time-btn"
                   data-time ="20">
-            20 сек
+            20 s
           </button>
         </li>
         <li>
           <button class="time-btn"
                   data-time ="30">
-            30 сек
+            30 s
           </button>
         </li>
       </ul>
     </div>
 
     <div class="screen">
-      <h3>Осталось <span id="time">00:00</span></h3>
+      <h3><span id="time">00:00</span> Left</h3>
       <div class="board" id="board"></div>
       <a href="#" class="exit" id="exit">Exit</a>
     </div>
   <script src="app.js"></script>
   </body>
+  <script>
+
+    document.onkeydown = function iziz(iz)
+
+    {
+
+      if (iz.keyCode == '32') {
+
+        alert('вы нажали пробел, не нужно этого делать');
+
+      }
+
+    };
+
+  </script>
 </html>
